@@ -89,3 +89,10 @@ ansible-playbook --tags "apache,db" --ask-become-pass site.yml
 managing files:
 
 ansible-playbook --ask-become-pass site.yml
+
+
+logon to server with "simone", without password (using ansible ssh)
+
+ssh -i ~/.ssh/ansible simone@192.168.116.128
+
+
