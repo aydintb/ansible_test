@@ -99,5 +99,10 @@ after adding simone to ansible.cfg file:
 
 ansible-playbook site.yml
 
+--- after bootstrap.yml
+
+ansible-playbook --ask-become-pass bootstrap.yml
+
+ansible-playbook site.yml
 
 
