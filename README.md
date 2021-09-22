@@ -88,3 +88,4 @@ ansible-playbook --tags "apache,db" --ask-become-pass site.yml
 
 managing files:
 
+ansible-playbook --ask-become-pass site.yml
