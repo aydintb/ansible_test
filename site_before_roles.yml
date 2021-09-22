@@ -7,6 +7,7 @@
   - name: update repo cache (CentOS)
     tags: always
     package:
+      #update_only: yes
       update_cache: yes
     changed_when: false
     when: ansible_distribution == "CentOS"
@@ -14,6 +15,7 @@
   - name: update repo cache (Ubuntu)
     tags: always
     apt:
+      #upgrade: dist
       update_cache: yes
     changed_when: false
     when: ansible_distribution == "Ubuntu"
@@ -123,7 +125,7 @@
   become: true
   tasks:
 
-  - name: install samba package
+  - name: install samba  package
     tags: samba
     package:
       name: samba
