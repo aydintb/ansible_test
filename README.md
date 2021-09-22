@@ -95,4 +95,9 @@ logon to server with "simone", without password (using ansible ssh)
 
 ssh -i ~/.ssh/ansible simone@192.168.116.128
 
+after adding simone to ansible.cfg file:
+
+ansible-playbook site.yml
+
+
 
