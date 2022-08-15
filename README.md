@@ -1,4 +1,5 @@
 
+m apt -a update_cache=true --become --ask-become-pass
 ssh-keygen -t ed25519 -C "this is a comment"
 ssh-copy-id -i ~/.ssh/id_ed25519.pub 172.16.250.132
 ssh 172.16.250.132
@@ -31,8 +32,7 @@ ansible all -m gather_facts
 
 ansible all -m gather_facts --limit 192.168.116.128
 
-ansible all -m apt -a update_cache=true --become --ask-become-pass
-
+ansible all -
 
 - hosts: host2
   tasks:
